@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<style>
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}</style>
+<title>Address List</title>
+</head>
+<body>
+<h1>Please enter an owner and address to store to your list:</h1>
+<form action = "addItemServlet" method="post">
+Owner: <input type = "text" name = "owner">
+Address: <input type = "text" name = "address">
+<input type = "submit" value="Add Address">
+</form> 
+<br />
+<a href = "viewAllItemsServlet">View the complete list</a>
+</body>
+</html>
