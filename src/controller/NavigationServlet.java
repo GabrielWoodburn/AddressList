@@ -63,7 +63,7 @@ public class NavigationServlet extends HttpServlet {
 			}
 
 		} else if (act.equals("Add")) {
-			path = "/index.html";
+			getServletContext().getRequestDispatcher("/index.html").forward(request, response);
 		}
 
 		getServletContext().getRequestDispatcher(path).forward(request, response);
